@@ -1,0 +1,55 @@
+.pageContainer{
+
+  overflow: hidden;
+  min-height: 110vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image:url("../../res/trianglify.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.pageContainer h1{
+  padding-top: 90px;
+  font-size: 3em;
+  text-align: center;
+
+  color: #17202A;
+  opacity: 1;
+
+
+}
+
+
+.myPhoto, .myPhoto img{
+  margin: auto;
+  margin-top: 20px;
+  width: 400px;
+
+}
+
+@media(max-width:900px){
+  .myPhoto{
+    transform: scale(0.8);
+  }
+}
+
+.skillsFlex{
+
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 40px;
+
+}
+
+.Skillbox{
+  padding: 20px;
+
+}

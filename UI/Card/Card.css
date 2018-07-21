@@ -1,0 +1,165 @@
+
+
+.card, .skill , .project, .book , .book2, .book3{
+    transition: 0.3s;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: inherit;
+    height: inherit;
+}
+
+
+.card img{
+  display: block;
+  border-radius: 5px;
+
+}
+
+.card:hover, .skill:hover, .project:hover, .book:hover{
+  box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.2);
+  transform: scale(1.01);
+}
+
+.book:hover, .book2:hover, .book3:hover{
+    transform: scale(1.2);
+}
+.skill{
+  color: black;
+  text-align: center;
+  height:220px;
+  width: 200px;
+  font-size: 1.2em;
+  background-color: white;
+}
+
+@media(max-width:620px){
+  .skill{
+    width: 85vw;
+  }
+}
+
+
+/*---------------------------------STYLING FOR SKILL CARD STARTS HERE *-------------------/
+/* Remove margins and padding from the list */
+.skill ul {
+
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+/* Style the list items */
+.skill ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 4px 4px 4px 20px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+.skill ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.skill ul li:hover {
+    background: #ddd;
+}
+
+
+/*---------------------------------------------STYLING FOR PRODUCT CARD STARTS HERE---------------*/
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  height: 250px;
+  width: 600px;
+
+
+/*  background-color: #293d5e;
+  color: white;*/
+
+  background-color:#EDEDEE;
+  color: black;
+  font-size: 18px;
+}
+
+@media(max-width:800px){
+  .project{
+    width:80vw;
+    height: auto;
+  }
+}
+.project h2{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.project img{
+  padding-right: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  float: left;
+  max-height:95px;
+  width: 95px;
+}
+
+
+.project p{
+  text-align: left;
+  margin: 10px;
+  margin-top: 0;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+}
+
+.project a{
+  border-top: 1px solid black;
+  padding: 4px;
+  color: #1C2833  ;
+  margin: 10px;
+  margin-bottom: 7px;
+  text-align: right;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book{
+  margin: 10px;
+  display: block;
+  background-color: #016a87;
+  height: 90px;
+  width: 190px;
+  text-decoration: none;
+}
+
+
+.book2{
+  margin: 10px;
+  display: block;
+  background-color: #af2a4d;
+  height: 90px;
+  width: 190px;
+  text-decoration: none;
+
+}
+
+.book3{
+  margin: 10px;
+  display: block;
+  background-color: #1c9287;
+  height: 90px;
+  width: 190px;
+  text-decoration: none;
+}

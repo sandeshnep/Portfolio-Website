@@ -1,0 +1,12 @@
+
+.NavigationItems {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  z-index: 90;
+  position: absolute;
+  margin-top: 0;
+  border-radius: 5px;
+
+}

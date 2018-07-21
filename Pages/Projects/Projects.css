@@ -1,0 +1,91 @@
+.pageContainer{
+
+  overflow: hidden;
+
+  padding-top: 40px;
+
+  text-align: center;
+  color: Black;
+
+  /*
+  background-image: url("./retro.svg");
+  background-repeat: no-repeat;
+  background-size:101vh;
+*/
+  min-height: 110vh;
+
+
+  background-color: #356f8d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23faf8fc' fill-opacity='0.12'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.pageContainer h1 {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  margin: 30px auto;
+}
+
+
+
+.wrapper{
+  display: block;
+}
+
+.projectsContainer{
+
+  margin: 30px auto;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+@media(max-width: 600px){
+
+}
+
+/* @media(max-width: 730px){
+.projectsContainer{
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+} */
+
+/** this is the prev next button */
+
+
+.previous {
+
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 50px;
+    padding: 16px 16px;
+    background-color:#EDEDEE;
+    color: black;
+    border-radius: 5px 0px 0px 5px ;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.2);
+
+}
+
+.next {
+    margin-bottom: 50px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 16px;
+    background-color: #EDEDEE;
+    color: black;
+    border-radius: 0px 5px 5px 0px ;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.2);
+
+}
+
+.previous:hover, .next:hover{
+  background-color: #B3B6B7 ;
+  color:black;
+
+}

@@ -1,0 +1,64 @@
+/* Common styles and resets */
+
+.dotstyle ul {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  z-index: 120;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	margin: 20px 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	border:0;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: black;/*rgba(255, 255, 255, 0.3);*/
+	text-indent: -999em; /* make the text accessible to screen readers */
+	cursor: pointer;
+	position: absolute;
+	border:0;
+}
+
+.dotstyle li a:focus {
+	outline: none;
+}
+
+
+/* Dot to stroke */
+
+.dotstyledotstroke li a {
+	box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.5);
+	-webkit-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+}
+
+.dotstyledotstroke li a:hover,
+.dotstyledotstroke li a:focus {
+	box-shadow: inset 0 0 0 8px black;
+}
+
+.dotstyledotstroke li.current a {
+	box-shadow: inset 0 0 0 2px black;
+}

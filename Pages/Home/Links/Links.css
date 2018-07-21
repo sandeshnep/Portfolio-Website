@@ -1,0 +1,18 @@
+.icon{
+  display: block;
+  height: 90px;
+  width: 90px;
+
+
+}
+
+.linkContainer{
+  margin-bottom: 70px;
+}
+
+/*for mobile*/
+@media (max-width: 730px){
+  .linkContainer{
+    margin-right: 70px;
+  }
+}
